@@ -1,0 +1,25 @@
+# Configuration
+/.htaccess
+/wp-config.php
+
+# Log files
+*.log
+
+# Editor directories and files
+/license.txt
+/readme.html
+/index.php
+/wp-*.php
+/xmlrpc.php
+/wp-admin/
+/wp-includes/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/*
+/wp-content/uploads
+/wp-content/upgrade
+/wp-content/themes/*
+!wp-content/themes/raccocleaning
+.vscode/launch.json
+.env
+about.docx
