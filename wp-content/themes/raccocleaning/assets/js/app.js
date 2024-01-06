@@ -392,7 +392,24 @@ function dropdown(options) {
 }
 
 function submitForm(form) {
-  onSuccess();
+  const callAjaxMethod = () => {
+    const data = {
+      action: "frontend_submit_action",
+      name: "Yaroslav",
+    };
+
+    jQuery.ajax({
+      url: variables.ajaxurl,
+      type: "POST",
+      data: data,
+      success: function (response) {
+        console.log("Successfully submited!", response);
+        onSuccess();
+      },
+    });
+  };
+  // let's make AJAX request to PHP
+  callAjaxMethod();
 
   function onSuccess() {
     $("form").each(function () {

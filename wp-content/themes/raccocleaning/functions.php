@@ -22,7 +22,20 @@ function raccocleaning_get_theme_version(){
 	wp_enqueue_script( 'additional-methods-js', get_template_directory_uri() . '/assets/js/additional-methods.min.js', array( 'jquery-js' ), $theme_version, true );
 	wp_enqueue_script( 'jquery-fancybox-js', get_template_directory_uri() . '/assets/js/jquery.fancybox.min.js', array( 'jquery-js' ), $theme_version, true );
 	wp_enqueue_script( 'swiper-js', get_template_directory_uri() . '/assets/js/swiper.js', array( 'jquery-js' ), $theme_version, true );
+	// main js file
 	wp_enqueue_script( 'app-js', get_template_directory_uri() . '/assets/js/app.js', array( 'jquery-js', 'jquery-validate-js' ), $theme_version, true );
-
+	$variables = array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' )
+    );
+    wp_localize_script('app-js', "variables", $variables);
 }
 add_action( 'wp_enqueue_scripts', 'raccocleaning_scripts' );
+
+// AJAX request from front-end:
+add_action("wp_ajax_frontend_submit_action" , "frontend_submit_action");
+add_action("wp_ajax_nopriv_frontend_submit_action" , "frontend_submit_action");
+
+function frontend_submit_action(){
+    echo json_encode($_POST);
+    wp_die();
+}
