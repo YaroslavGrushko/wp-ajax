@@ -2,8 +2,8 @@
         <div class="container">
           <div class="footer__container">
             <a href="" class="footer__logo header__logo">
-              <img src="/static/app/img/logo-hover.svg" class="header__logo-hover" alt="RaccoCleaning">
-              <img src="/static/app/img/logo-white.svg" alt="RaccoCleaning">
+              <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-hover.svg'); ?>" class="header__logo-hover" alt="RaccoCleaning">
+              <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-white.svg'); ?>" alt="RaccoCleaning">
             </a>
             <div class="footer__block">
               <nav class="footer__nav">
@@ -64,10 +64,10 @@
                     <label>Name</label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
-                        <img src="/static/app/img/ico-checked.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
                       </div>
                       <div class="input__validation-invalid">
-                        <img src="/static/app/img/ico-cancel.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cancel.svg'); ?>" alt="" role="presentation">
                       </div>
                     </div>
                     <div class="input__error"></div>
@@ -92,10 +92,10 @@
                     <label>Phone number</label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
-                        <img src="/static/app/img/ico-checked.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
                       </div>
                       <div class="input__validation-invalid">
-                        <img src="/static/app/img/ico-cancel.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cancel.svg'); ?>" alt="" role="presentation">
                       </div>
                     </div>
                     <div class="input__error"></div>
@@ -121,10 +121,10 @@
                     <label>Email</label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
-                        <img src="/static/app/img/ico-checked.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
                       </div>
                       <div class="input__validation-invalid">
-                        <img src="/static/app/img/ico-cancel.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cancel.svg'); ?>" alt="" role="presentation">
                       </div>
                     </div>
                     <div class="input__error"></div>
@@ -147,10 +147,10 @@
                     <label>Address</label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
-                        <img src="/static/app/img/ico-checked.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
                       </div>
                       <div class="input__validation-invalid">
-                        <img src="/static/app/img/ico-cancel.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cancel.svg'); ?>" alt="" role="presentation">
                       </div>
                     </div>
                     <div class="input__error"></div>
@@ -176,10 +176,10 @@
                     <label>Service</label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
-                        <img src="/static/app/img/ico-checked.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
                       </div>
                       <div class="input__validation-invalid">
-                        <img src="/static/app/img/ico-cancel.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cancel.svg'); ?>" alt="" role="presentation">
                       </div>
                     </div>
                     <div class="input__error"></div>
@@ -222,10 +222,10 @@
                     <label>Square (Sq ft)</label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
-                        <img src="/static/app/img/ico-checked.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
                       </div>
                       <div class="input__validation-invalid">
-                        <img src="/static/app/img/ico-cancel.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cancel.svg'); ?>" alt="" role="presentation">
                       </div>
                     </div>
                     <div class="input__error"></div>
@@ -251,10 +251,10 @@
                     <label>Bedrooms</label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
-                        <img src="/static/app/img/ico-checked.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
                       </div>
                       <div class="input__validation-invalid">
-                        <img src="/static/app/img/ico-cancel.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cancel.svg'); ?>" alt="" role="presentation">
                       </div>
                     </div>
                     <div class="input__error"></div>
@@ -273,10 +273,10 @@
                     </div>
                     <div class="input__number">
                       <div class="input__number-btn input__number-minus">
-                        <img src="/static/app/img/ico-btn-minus.svg" alt="-">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-btn-minus.svg'); ?>" alt="-">
                       </div>
                       <div class="input__number-btn input__number-plus">
-                        <img src="/static/app/img/ico-btn-plus.svg" alt="+">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-btn-plus.svg'); ?>" alt="+">
                       </div>
                     </div>
                   </div>
@@ -287,10 +287,10 @@
                     <label>Bathrooms</label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
-                        <img src="/static/app/img/ico-checked.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
                       </div>
                       <div class="input__validation-invalid">
-                        <img src="/static/app/img/ico-cancel.svg" alt="" role="presentation">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cancel.svg'); ?>" alt="" role="presentation">
                       </div>
                     </div>
                     <div class="input__error"></div>
@@ -317,10 +317,10 @@
                     </div>
                     <div class="input__number">
                       <div class="input__number-btn input__number-minus">
-                        <img src="/static/app/img/ico-btn-minus.svg" alt="-">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-btn-minus.svg'); ?>" alt="-">
                       </div>
                       <div class="input__number-btn input__number-plus">
-                        <img src="/static/app/img/ico-btn-plus.svg" alt="+">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-btn-plus.svg'); ?>" alt="+">
                       </div>
                     </div>
                   </div>
