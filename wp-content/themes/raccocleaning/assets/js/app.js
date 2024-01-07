@@ -393,9 +393,25 @@ function dropdown(options) {
 
 function submitForm(form) {
   const callAjaxMethod = () => {
+    const name = $(form).find("input[name=name]").val();
+    const tel = $(form).find("input[name=tel]").val();
+    const email = $(form).find("input[name=email]").val();
+    const address = $(form).find("input[name=address]").val();
+    const service = $(form).find(".input--select input[type=text]").val();
+    const square = $(form).find("input[name=square]").val();
+    const bedrooms = $(form).find("input[name=bedrooms]").val();
+    const bathrooms = $(form).find("input[name=bathrooms]").val();
+
     const data = {
       action: "frontend_submit_action",
-      name: "Yaroslav",
+      name: name,
+      tel: tel,
+      email: email,
+      address: address,
+      service: service,
+      square: square,
+      bedrooms: bedrooms,
+      bathrooms: bathrooms,
     };
 
     jQuery.ajax({
