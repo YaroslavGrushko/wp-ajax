@@ -102,7 +102,9 @@ get_header();
             <div class="promo__form">
             <div class="promo__form-head">
                 <div class="promo__form-title">
-                <h2><?php the_field('name'); ?></h2>
+                <h2><?php 
+                // the_field('name'); 
+                ?></h2>
                 </div>
                 <div class="promo__form-text">
                 <p>You can apply right now! And very soon our manager will contact you.</p>

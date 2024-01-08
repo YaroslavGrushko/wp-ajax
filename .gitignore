@@ -19,6 +19,7 @@
 /wp-content/uploads
 /wp-content/upgrade
 /wp-content/themes/*
+/wp-content/backups-dup-lite/
 !wp-content/themes/raccocleaning
 .vscode/launch.json
 .env

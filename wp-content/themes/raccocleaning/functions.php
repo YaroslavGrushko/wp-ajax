@@ -131,8 +131,25 @@ Bathrooms: " . $bathrooms . "\n";
 						'post_status' => 'publish', /* Or "draft", if required */
 					)       
 				);
+				mail_to_admin($content);
 				wp_die();
 			}
 	}
-    
+}
+
+function mail_to_admin($content){
+
+	$admin_mail = get_option('admin_email');
+	$to = $admin_mail;
+	$from = __( 'From ', 'yvgraccocleaning' ) . $admin_mail;
+	$subject = __( 'Cleaning Application', 'yvgraccocleaning' );
+
+	$headers = array(
+		'Content-Type: text/html; charset=UTF-8',
+		$from,
+	);
+
+	$mail_content = str_replace("\n", "<br>", $content);
+
+	wp_mail($to, $subject, $mail_content, $headers);
 }
