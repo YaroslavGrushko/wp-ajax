@@ -50,10 +50,10 @@
           <div class="promo__form">
             <div class="promo__form-head">
               <div class="promo__form-title">
-                <h2>Book a Cleaning </h2>
+                <h2><?php the_field('form_title'); ?></h2>
               </div>
               <div class="promo__form-text">
-                <p>You can apply right now! And very soon our manager will contact you.</p>
+                <p><?php the_field('form_subtitle'); ?></p>
               </div>
             </div>
             <form class="promo__form-body popup_form" id="popup_form">
@@ -61,7 +61,7 @@
                 <div class="promo__form-input">
                   <div class="input input--text ">
                     <input type="text" name="name" required data-validation="name" placeholder=" ">
-                    <label>Name</label>
+                    <label><?php the_field('name_label'); ?></label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -89,7 +89,7 @@
                 <div class="promo__form-input">
                   <div class="input input--text ">
                     <input type="text" name="tel" required data-validation="tel" inputmode="tel" placeholder=" ">
-                    <label>Phone number</label>
+                    <label><?php the_field('phone_label'); ?></label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -118,7 +118,7 @@
                 <div class="promo__form-input">
                   <div class="input input--email ">
                     <input type="email" name="email" required data-validation="email" placeholder=" ">
-                    <label>Email</label>
+                    <label><?php the_field('email_label'); ?></label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -138,13 +138,13 @@
                 </div>
               </div>
               <div class="promo__form-subtitle">
-                <h3>Address cleaning</h3>
+                <h3><?php the_field('address_title'); ?></h3>
               </div>
               <div class="promo__form-row">
                 <div class="promo__form-input">
                   <div class="input input--text ">
                     <input type="text" name="address" required data-validation="address" placeholder=" ">
-                    <label>Address</label>
+                    <label><?php the_field('address_label'); ?></label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -173,7 +173,7 @@
                 <div class="promo__form-input">
                   <div class="input input--select ">
                     <input type="text" readonly required placeholder=" ">
-                    <label>Service</label>
+                    <label><?php the_field('service_label'); ?></label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -207,11 +207,11 @@
                     <input type="hidden" name="service">
                     <div class="input__select">
                       <ul>
-                        <li data-value="1">Service 1</li>
-                        <li data-value="2">Service 2</li>
-                        <li data-value="3">Service 3</li>
-                        <li data-value="4">Service 4</li>
-                        <li data-value="5">Service 5</li>
+                          <li data-value="1"><?php the_field('service_1'); ?></li>
+                          <li data-value="2"><?php the_field('service_2'); ?></li>
+                          <li data-value="3"><?php the_field('service_3'); ?></li>
+                          <li data-value="4"><?php the_field('service_4'); ?></li>
+                          <li data-value="5"><?php the_field('service_5'); ?></li>
                       </ul>
                     </div>
                   </div>
@@ -219,7 +219,7 @@
                 <div class="promo__form-input">
                   <div class="input input--text ">
                     <input type="text" name="square" required data-validation="numeric" inputmode="numeric" placeholder=" ">
-                    <label>Square (Sq ft)</label>
+                    <label><?php the_field('square_label'); ?></label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -248,7 +248,7 @@
                 <div class="promo__form-input">
                   <div class="input input--number ">
                     <input type="numbertext" name="bedrooms" required data-validation="numeric" inputmode="numeric" value="1" min="0" maxlength="3" placeholder=" ">
-                    <label>Bedrooms</label>
+                    <label><?php the_field('bedrooms_label'); ?></label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -284,7 +284,7 @@
                 <div class="promo__form-input">
                   <div class="input input--number ">
                     <input type="numbertext" name="bathrooms" required data-validation="numeric" inputmode="numeric" value="1" min="0" maxlength="3" placeholder=" ">
-                    <label>Bathrooms</label>
+                    <label><?php the_field('bathrooms_label'); ?></label>
                     <div class="input__validation">
                       <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -327,7 +327,7 @@
                 </div>
               </div>
               <div class="promo__form-submit">
-                <button type="submit" class="button   "> Send </button>
+                <button type="submit" class="button   "> <?php the_field('send_label'); ?> </button>
               </div>
             </form>
           </div>

@@ -19,12 +19,12 @@ get_header();
         </div>
         <nav class="header__nav">
             <ul>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#services"><?php the_field("our_services_label"); ?></a></li>
+            <li><a href="#faq"><?php the_field("faq_label"); ?></a></li>
             </ul>
         </nav>
         <div class="header__btns">
-            <a href="tel:+18479573957" class="button  button--color-primary-2   button--no-border mobile-hide  ">
+            <a href="tel:<?php the_field('header_phone_number'); ?>" class="button  button--color-primary-2   button--no-border mobile-hide  ">
             <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_142_56)">
                 <path d="M14.5916 11.5085L12.4983 9.41519C11.7507 8.66759 10.4798 8.96666 10.1807 9.93852C9.95646 10.6114 9.20886 10.9852 8.53601 10.8356C7.0408 10.4618 5.02227 8.51807 4.64847 6.9481C4.42418 6.27522 4.87275 5.52762 5.54559 5.30336C6.51748 5.00432 6.81652 3.73339 6.06892 2.98579L3.97562 0.892493C3.37754 0.369169 2.48041 0.369169 1.95709 0.892493L0.536636 2.31294C-0.883814 3.80815 0.686158 7.77046 4.1999 11.2842C7.71365 14.798 11.676 16.4427 13.1712 14.9475L14.5916 13.527C15.115 12.9289 15.115 12.0318 14.5916 11.5085Z" fill="#F1C40F" />
@@ -34,8 +34,8 @@ get_header();
                     <rect width="15" height="15" fill="white" transform="translate(0 0.5)" />
                 </clipPath>
                 </defs>
-            </svg> +1 847 957 39 57 </a>
-            <button class="button  button--color-primary-2   button-- openPopup-form-popup  "> Book Now </button>
+            </svg> <?php the_field('header_phone_label'); ?> </a>
+            <button class="button  button--color-primary-2   button-- openPopup-form-popup  "> <?php the_field("book_now_label"); ?> </button>
             <div class="header__menu">
             <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M27.7708 31H3.22917C1.44796 31 0 29.5507 0 27.7708V3.22917C0 1.44925 1.44796 0 3.22917 0H27.7708C29.552 0 31 1.44925 31 3.22917V27.7708C31 29.5507 29.552 31 27.7708 31ZM3.22917 1.29167C2.16096 1.29167 1.29167 2.16096 1.29167 3.22917V27.7708C1.29167 28.839 2.16096 29.7083 3.22917 29.7083H27.7708C28.839 29.7083 29.7083 28.839 29.7083 27.7708V3.22917C29.7083 2.16096 28.839 1.29167 27.7708 1.29167H3.22917Z" fill="#F1C40F" />
@@ -57,7 +57,7 @@ get_header();
         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-black.svg'); ?>" alt="RaccoCleaning">
         </a>
         <div class="menu__btn">
-        <a href="tel:+18479573957" class="button  button--color-primary-2   button--no-border  ">
+        <a href="tel:<?php the_field('header_phone_number'); ?>" class="button  button--color-primary-2   button--no-border  ">
             <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_142_56)">
                 <path d="M14.5916 11.5085L12.4983 9.41519C11.7507 8.66759 10.4798 8.96666 10.1807 9.93852C9.95646 10.6114 9.20886 10.9852 8.53601 10.8356C7.0408 10.4618 5.02227 8.51807 4.64847 6.9481C4.42418 6.27522 4.87275 5.52762 5.54559 5.30336C6.51748 5.00432 6.81652 3.73339 6.06892 2.98579L3.97562 0.892493C3.37754 0.369169 2.48041 0.369169 1.95709 0.892493L0.536636 2.31294C-0.883814 3.80815 0.686158 7.77046 4.1999 11.2842C7.71365 14.798 11.676 16.4427 13.1712 14.9475L14.5916 13.527C15.115 12.9289 15.115 12.0318 14.5916 11.5085Z" fill="#F1C40F" />
@@ -67,12 +67,12 @@ get_header();
                 <rect width="15" height="15" fill="white" transform="translate(0 0.5)" />
                 </clipPath>
             </defs>
-            </svg> +1 847 957 39 57 </a>
+            </svg> <?php the_field('header_phone_label'); ?> </a>
         </div>
         <nav class="menu__nav">
         <ul>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#services"><?php the_field("our_services_label"); ?></a></li>
+            <li><a href="#faq"><?php the_field("faq_label"); ?></a></li>
         </ul>
         </nav>
     </div>
@@ -90,24 +90,22 @@ get_header();
         <div class="promo__container">
             <div class="promo__content">
             <div class="section-subtitle">
-                <span>Makes life better</span>
+                <span><?php the_field("slogan"); ?></span>
             </div>
             <div class="promo__title">
-                <h1>Professional cleaning services <span>in Chicago’s</span></h1>
+                <h1><?php the_field("slogan_subtitle_part_1"); ?> <span><?php the_field("slogan_subtitle_part_2"); ?></span></h1>
             </div>
             <div class="promo__text">
-                <p>We strive to make your experience with us both easy and enjoyable. You can book your home or apartment cleaning online with our user friendly system </p>
+                <p><?php the_field("request_description"); ?></p>
             </div>
             </div>
             <div class="promo__form">
             <div class="promo__form-head">
                 <div class="promo__form-title">
-                <h2><?php 
-                // the_field('name'); 
-                ?></h2>
+                <h2><?php the_field('form_title'); ?></h2>
                 </div>
                 <div class="promo__form-text">
-                <p>You can apply right now! And very soon our manager will contact you.</p>
+                <p><?php the_field('form_subtitle'); ?></p>
                 </div>
             </div>
             <form class="promo__form-body" id="form_promo">
@@ -115,7 +113,7 @@ get_header();
                 <div class="promo__form-input">
                     <div class="input input--text ">
                     <input type="text" name="name" required data-validation="name" placeholder=" ">
-                    <label>Name</label>
+                    <label><?php the_field('name_label'); ?></label>
                     <div class="input__validation">
                         <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -143,7 +141,7 @@ get_header();
                 <div class="promo__form-input">
                     <div class="input input--text ">
                     <input type="text" name="tel" required data-validation="tel" inputmode="tel" placeholder=" ">
-                    <label>Phone number</label>
+                    <label><?php the_field('phone_label'); ?></label>
                     <div class="input__validation">
                         <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -172,7 +170,7 @@ get_header();
                 <div class="promo__form-input">
                     <div class="input input--email ">
                     <input type="email" name="email" required data-validation="email" placeholder=" ">
-                    <label>Email</label>
+                    <label><?php the_field('email_label'); ?></label>
                     <div class="input__validation">
                         <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -192,13 +190,13 @@ get_header();
                 </div>
                 </div>
                 <div class="promo__form-subtitle">
-                <h3>Address cleaning</h3>
+                <h3><?php the_field('address_title'); ?></h3>
                 </div>
                 <div class="promo__form-row">
                 <div class="promo__form-input">
                     <div class="input input--text ">
                     <input type="text" name="address" required data-validation="address" placeholder=" ">
-                    <label>Address</label>
+                    <label><?php the_field('address_label'); ?></label>
                     <div class="input__validation">
                         <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -227,7 +225,7 @@ get_header();
                 <div class="promo__form-input">
                     <div class="input input--select ">
                     <input type="text" readonly required placeholder=" ">
-                    <label>Service</label>
+                    <label><?php the_field('service_label'); ?></label>
                     <div class="input__validation">
                         <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -261,11 +259,11 @@ get_header();
                     <input type="hidden" name="service">
                     <div class="input__select">
                         <ul>
-                        <li data-value="1">Service 1</li>
-                        <li data-value="2">Service 2</li>
-                        <li data-value="3">Service 3</li>
-                        <li data-value="4">Service 4</li>
-                        <li data-value="5">Service 5</li>
+                            <li data-value="1"><?php the_field('service_1'); ?></li>
+                            <li data-value="2"><?php the_field('service_2'); ?></li>
+                            <li data-value="3"><?php the_field('service_3'); ?></li>
+                            <li data-value="4"><?php the_field('service_4'); ?></li>
+                            <li data-value="5"><?php the_field('service_5'); ?></li>
                         </ul>
                     </div>
                     </div>
@@ -273,7 +271,7 @@ get_header();
                 <div class="promo__form-input">
                     <div class="input input--text ">
                     <input type="text" name="square" required data-validation="numeric" inputmode="numeric" placeholder=" ">
-                    <label>Square (Sq ft)</label>
+                    <label><?php the_field('square_label'); ?></label>
                     <div class="input__validation">
                         <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -302,7 +300,7 @@ get_header();
                 <div class="promo__form-input">
                     <div class="input input--number ">
                     <input type="numbertext" name="bedrooms" required data-validation="numeric" inputmode="numeric" value="1" min="0" maxlength="3" placeholder=" ">
-                    <label>Bedrooms</label>
+                    <label><?php the_field('bedrooms_label'); ?></label>
                     <div class="input__validation">
                         <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -338,7 +336,7 @@ get_header();
                 <div class="promo__form-input">
                     <div class="input input--number ">
                     <input type="numbertext" name="bathrooms" required data-validation="numeric" inputmode="numeric" value="1" min="0" maxlength="3" placeholder=" ">
-                    <label>Bathrooms</label>
+                    <label><?php the_field('bathrooms_label'); ?></label>
                     <div class="input__validation">
                         <div class="input__validation-valid">
                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-checked.svg'); ?>" alt="" role="presentation">
@@ -381,7 +379,7 @@ get_header();
                 </div>
                 </div>
                 <div class="promo__form-submit">
-                <button type="submit" class="button   "> Send </button>
+                <button type="submit" class="button   "> <?php the_field('send_label'); ?> </button>
                 </div>
             </form>
             </div>
@@ -449,10 +447,10 @@ get_header();
         <div class="container">
         <div class="reasons__container">
             <div class="section-subtitle">
-            <span>Makes life better</span>
+            <span><?php the_field("slogan"); ?></span>
             </div>
             <div class="reasons__title">
-            <h1>Professional cleaning services in Chicago’s</h1>
+            <h1><?php the_field("slogan_subtitle_part_1"); ?> <?php the_field("slogan_subtitle_part_2"); ?></h1>
             </div>
             <div class="reasons__text">
             <p>We’re the ultimate cleaning company. Try Us & You’ll See What The Awesome Is All About!</p>
