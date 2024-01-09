@@ -389,7 +389,7 @@ get_header();
     <section class="services" id="services">
         <div class="container">
         <div class="section-title">
-            <h2>Our <span>Services</span></h2>
+            <h2><?php the_field('title_part_1'); ?> <span><?php the_field('title_part_2'); ?></span></h2>
         </div>
         <div class="services__container">
             <article class="services__item">
@@ -398,14 +398,14 @@ get_header();
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-plumbing.svg'); ?>" alt="" role="presentation">
                 </div>
                 <div class="services__item-title">
-                <h3>Regular</h3>
+                <h3><?php the_field('service_block_title_1'); ?></h3>
                 </div>
             </div>
             <div class="services__item-text">
-                <p>You fill out an application on the site or contact us in a way convenient for you (phone, e mail, instant messenger)</p>
+                <p><?php the_field('service_block_1'); ?></p>
             </div>
             <div class="services__item-link">
-                <a href="openPopup-form-popup">Send a request</a>
+                <a href="openPopup-form-popup"><?php the_field('service_request_button'); ?></a>
             </div>
             </article>
             <article class="services__item">
@@ -414,14 +414,14 @@ get_header();
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-computer.svg'); ?>" alt="" role="presentation">
                 </div>
                 <div class="services__item-title">
-                <h3>Deep</h3>
+                <h3><?php the_field('service_block_title_2'); ?></h3>
                 </div>
             </div>
             <div class="services__item-text">
-                <p>You fill out an application on the site or contact us in a way convenient for you (phone, e mail, instant messenger)</p>
+                <p><?php the_field('service_block_2'); ?></p>
             </div>
             <div class="services__item-link">
-                <a href="openPopup-form-popup">Send a request</a>
+                <a href="openPopup-form-popup"><?php the_field('service_request_button'); ?></a>
             </div>
             </article>
             <article class="services__item">
@@ -430,14 +430,14 @@ get_header();
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-vacuum.svg'); ?>" alt="" role="presentation">
                 </div>
                 <div class="services__item-title">
-                <h3>Move in/out</h3>
+                <h3><?php the_field('service_block_title_3'); ?></h3>
                 </div>
             </div>
             <div class="services__item-text">
-                <p>You fill out an application on the site or contact us in a way convenient for you (phone, e mail, instant messenger)</p>
+                <p><?php the_field('service_block_3'); ?></p>
             </div>
             <div class="services__item-link">
-                <a href="openPopup-form-popup">Send a request</a>
+                <a href="openPopup-form-popup"><?php the_field('service_request_button'); ?></a>
             </div>
             </article>
         </div>
@@ -453,21 +453,21 @@ get_header();
             <h1><?php the_field("slogan_subtitle_part_1"); ?> <?php the_field("slogan_subtitle_part_2"); ?></h1>
             </div>
             <div class="reasons__text">
-            <p>We’re the ultimate cleaning company. Try Us & You’ll See What The Awesome Is All About!</p>
+            <p><?php the_field("features_description"); ?></p>
             </div>
             <ul class="reasons__list">
             <li>
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-bubbles.svg'); ?>" alt="" role="presentation"> Free cleaning supplies </li>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-bubbles.svg'); ?>" alt="" role="presentation"> <?php the_field("feature_1"); ?> </li>
             <li>
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-shopping-cart.svg'); ?>" alt="" role="presentation"> Superior order customization </li>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-shopping-cart.svg'); ?>" alt="" role="presentation"> <?php the_field("feature_2"); ?> </li>
             <li>
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-badge.svg'); ?>" alt="" role="presentation"> Exceptional quality & consistency </li>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-badge.svg'); ?>" alt="" role="presentation"> <?php the_field("feature_3"); ?> </li>
             <li>
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cleaning-spray.svg'); ?>" alt="" role="presentation"> Free rooms freshener & deodorizing </li>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-cleaning-spray.svg'); ?>" alt="" role="presentation"> <?php the_field("feature_4"); ?> </li>
             <li>
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-5-stars.svg'); ?>" alt="" role="presentation"> Pre-screened professional maids </li>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-5-stars.svg'); ?>" alt="" role="presentation"> <?php the_field("feature_5"); ?> </li>
             <li>
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-money.svg'); ?>" alt="" role="presentation"> No hidden fees </li>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ico-money.svg'); ?>" alt="" role="presentation"> <?php the_field("feature_6"); ?> </li>
             </ul>
         </div>
         </div>
@@ -475,7 +475,7 @@ get_header();
     <section class="steps">
         <div class="container">
         <div class="section-title">
-            <h2>How Does <span>It Work</span></h2>
+            <h2><?php the_field("how_it_works_title_part_1"); ?> <span><?php the_field("how_it_works_title_part_2"); ?></span></h2>
         </div>
         <div class="steps__container">
             <article class="steps__item">
@@ -484,9 +484,9 @@ get_header();
             </div>
             <div class="steps__item-text">
                 <div class="steps__item-title">
-                <h3>Book</h3>
+                <h3><?php the_field("how_title_1"); ?></h3>
                 </div>
-                <p>You fill out an application on the site or contact us in a way convenient for you (phone, e mail, instant messenger)</p>
+                <p><?php the_field("how_1"); ?></p>
             </div>
             <div class="steps__item-num"></div>
             <div class="steps__item-steps-side">
@@ -505,9 +505,9 @@ get_header();
             </div>
             <div class="steps__item-text">
                 <div class="steps__item-title">
-                <h3>Clean</h3>
+                <h3><?php the_field("how_title_2"); ?></h3>
                 </div>
-                <p>You fill out an application on the site or contact us in a way convenient for you (phone, e mail, instant messenger)</p>
+                <p><?php the_field("how_2"); ?></p>
             </div>
             <div class="steps__item-num"></div>
             <div class="steps__item-steps-side">
@@ -526,9 +526,9 @@ get_header();
             </div>
             <div class="steps__item-text">
                 <div class="steps__item-title">
-                <h3>Relax</h3>
+                <h3><?php the_field("how_title_3"); ?></h3>
                 </div>
-                <p>You fill out an application on the site or contact us in a way convenient for you (phone, e mail, instant messenger)</p>
+                <p><?php the_field("how_3"); ?></p>
             </div>
             <div class="steps__item-num"></div>
             <div class="steps__item-steps-side">
@@ -547,7 +547,7 @@ get_header();
     <section class="reviews">
         <div class="container">
         <div class="section-title">
-            <h2>Reviews <span>of our clients</span></h2>
+            <h2><?php the_field("reviews_title_part_1"); ?> <span><?php the_field("reviews_title_part_2"); ?></span></h2>
         </div>
         <div class="swiper-container">
             <div class="reviews__slider swiper swiper-pagination-mobile">
@@ -557,10 +557,10 @@ get_header();
                     <div class="reviews__item-info">
                     <div class="reviews__item-author">
                         <div class="reviews__item-author__avatar">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/avatar.png'); ?>" alt="">
+                        <img src="<?php the_field("reviewer_avatar_1") ?>" alt="">
                         </div>
                         <div class="reviews__item-author__name">
-                        <h3>Joan Perkins</h3>
+                        <h3><?php the_field("reviewer_name_1"); ?></h3>
                         </div>
                     </div>
                     <div class="reviews__item-rating">
@@ -590,7 +590,7 @@ get_header();
                     </div>
                     </div>
                     <div class="reviews__item-content">
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</q>
+                    <q><?php the_field("review_1"); ?></q>
                     </div>
                 </article>
                 </div>
@@ -599,10 +599,10 @@ get_header();
                     <div class="reviews__item-info">
                     <div class="reviews__item-author">
                         <div class="reviews__item-author__avatar">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/avatar.png'); ?>" alt="">
+                        <img src="<?php the_field("reviewer_avatar_2") ?>" alt="">
                         </div>
                         <div class="reviews__item-author__name">
-                        <h3>Joan Perkins</h3>
+                        <h3><?php the_field("reviewer_name_2"); ?></h3>
                         </div>
                     </div>
                     <div class="reviews__item-rating">
@@ -632,7 +632,7 @@ get_header();
                     </div>
                     </div>
                     <div class="reviews__item-content">
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</q>
+                    <q><?php the_field("review_2"); ?></q>
                     </div>
                 </article>
                 </div>
@@ -641,10 +641,10 @@ get_header();
                     <div class="reviews__item-info">
                     <div class="reviews__item-author">
                         <div class="reviews__item-author__avatar">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/avatar.png'); ?>" alt="">
+                        <img src="<?php the_field("reviewer_avatar_3") ?>" alt="">
                         </div>
                         <div class="reviews__item-author__name">
-                        <h3>Joan Perkins</h3>
+                        <h3><?php the_field("reviewer_name_3"); ?></h3>
                         </div>
                     </div>
                     <div class="reviews__item-rating">
@@ -674,7 +674,7 @@ get_header();
                     </div>
                     </div>
                     <div class="reviews__item-content">
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</q>
+                    <q><?php the_field("review_3"); ?></q>
                     </div>
                 </article>
                 </div>
@@ -683,10 +683,10 @@ get_header();
                     <div class="reviews__item-info">
                     <div class="reviews__item-author">
                         <div class="reviews__item-author__avatar">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/avatar.png'); ?>" alt="">
+                        <img src="<?php the_field("reviewer_avatar_4") ?>" alt="">
                         </div>
                         <div class="reviews__item-author__name">
-                        <h3>Joan Perkins</h3>
+                        <h3><?php the_field("reviewer_name_4"); ?></h3>
                         </div>
                     </div>
                     <div class="reviews__item-rating">
@@ -716,7 +716,7 @@ get_header();
                     </div>
                     </div>
                     <div class="reviews__item-content">
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</q>
+                    <q><?php the_field("review_4"); ?></q>
                     </div>
                 </article>
                 </div>
@@ -741,14 +741,14 @@ get_header();
     <section class="faq" id="faq">
         <div class="container">
         <div class="section-title">
-            <h2>FAQ</h2>
+            <h2><?php the_field('faq_main_title'); ?></h2>
         </div>
         <div class="faq__container">
             <div class="faq__list">
             <div class="accordion-list">
                 <div class="accordion">
                 <div class="accordion__head">
-                    <h3>What areas do you service?</h3>
+                    <h3><?php the_field('faq_title_1'); ?></h3>
                     <div class="accordion__ico">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="accordion__ico-vertical" d="M7.5 15C7.30575 15 7.11946 14.9228 6.9821 14.7855C6.84474 14.6481 6.76758 14.4618 6.76758 14.2676V0.732422C6.76758 0.538172 6.84474 0.351877 6.9821 0.214521C7.11946 0.0771657 7.30575 0 7.5 0C7.69425 0 7.88054 0.0771657 8.0179 0.214521C8.15526 0.351877 8.23242 0.538172 8.23242 0.732422V14.2676C8.23242 14.4618 8.15526 14.6481 8.0179 14.7855C7.88054 14.9228 7.69425 15 7.5 15Z" fill="#4DA390" />
@@ -758,14 +758,13 @@ get_header();
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__body-inner">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio amet facilisi sed gravida at. Amet pellentesque elit, molestie convallis donec. Eget a dui gravida aliquet est. Turpis lorem placerat amet mauris. Hendrerit nulla viverra dolor eget massa risus est. Suspendisse mi aliquam risus, a porta sed. Non sit phasellus rhoncus amet, gravida ut nec in turpis. Pretium nulla bibendum at metus. Id habitasse nec, dapibus id vulputate tristique ut. Nunc urna et mi elit ac. Dapibus amet, egestas tristique eget phasellus et sapien, vehicula amet. Eu aliquet sit lorem urna pellentesque odio. Aliquam blandit etiam nam urna molestie proin.</p>
-                    <p>Mi imperdiet gravida malesuada egestas eget et. Odio est orci volutpat aenean in. Volutpat, odio scelerisque at amet. Lectus libero semper phasellus dolor sed volutpat odio neque, integer. Turpis morbi urna at nullam. Vitae arcu pharetra vestibulum velit pellentesque vitae at id nisl. Odio egestas venenatis, enim cursus diam ipsum.</p>
+                        <?php the_field('faq_1'); ?>
                     </div>
                 </div>
                 </div>
                 <div class="accordion">
                 <div class="accordion__head">
-                    <h3>How much does it cost to clean my home?</h3>
+                    <h3><?php the_field('faq_title_2'); ?></h3>
                     <div class="accordion__ico">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="accordion__ico-vertical" d="M7.5 15C7.30575 15 7.11946 14.9228 6.9821 14.7855C6.84474 14.6481 6.76758 14.4618 6.76758 14.2676V0.732422C6.76758 0.538172 6.84474 0.351877 6.9821 0.214521C7.11946 0.0771657 7.30575 0 7.5 0C7.69425 0 7.88054 0.0771657 8.0179 0.214521C8.15526 0.351877 8.23242 0.538172 8.23242 0.732422V14.2676C8.23242 14.4618 8.15526 14.6481 8.0179 14.7855C7.88054 14.9228 7.69425 15 7.5 15Z" fill="#4DA390" />
@@ -775,14 +774,13 @@ get_header();
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__body-inner">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio amet facilisi sed gravida at. Amet pellentesque elit, molestie convallis donec. Eget a dui gravida aliquet est. Turpis lorem placerat amet mauris. Hendrerit nulla viverra dolor eget massa risus est. Suspendisse mi aliquam risus, a porta sed. Non sit phasellus rhoncus amet, gravida ut nec in turpis. Pretium nulla bibendum at metus. Id habitasse nec, dapibus id vulputate tristique ut. Nunc urna et mi elit ac. Dapibus amet, egestas tristique eget phasellus et sapien, vehicula amet. Eu aliquet sit lorem urna pellentesque odio. Aliquam blandit etiam nam urna molestie proin.</p>
-                    <p>Mi imperdiet gravida malesuada egestas eget et. Odio est orci volutpat aenean in. Volutpat, odio scelerisque at amet. Lectus libero semper phasellus dolor sed volutpat odio neque, integer. Turpis morbi urna at nullam. Vitae arcu pharetra vestibulum velit pellentesque vitae at id nisl. Odio egestas venenatis, enim cursus diam ipsum.</p>
+                        <?php the_field('faq_2'); ?>
                     </div>
                 </div>
                 </div>
                 <div class="accordion">
                 <div class="accordion__head">
-                    <h3>How do I setup recurring cleanings?</h3>
+                    <h3><?php the_field('faq_title_3'); ?></h3>
                     <div class="accordion__ico">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="accordion__ico-vertical" d="M7.5 15C7.30575 15 7.11946 14.9228 6.9821 14.7855C6.84474 14.6481 6.76758 14.4618 6.76758 14.2676V0.732422C6.76758 0.538172 6.84474 0.351877 6.9821 0.214521C7.11946 0.0771657 7.30575 0 7.5 0C7.69425 0 7.88054 0.0771657 8.0179 0.214521C8.15526 0.351877 8.23242 0.538172 8.23242 0.732422V14.2676C8.23242 14.4618 8.15526 14.6481 8.0179 14.7855C7.88054 14.9228 7.69425 15 7.5 15Z" fill="#4DA390" />
@@ -792,15 +790,14 @@ get_header();
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__body-inner">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio amet facilisi sed gravida at. Amet pellentesque elit, molestie convallis donec. Eget a dui gravida aliquet est. Turpis lorem placerat amet mauris. Hendrerit nulla viverra dolor eget massa risus est. Suspendisse mi aliquam risus, a porta sed. Non sit phasellus rhoncus amet, gravida ut nec in turpis. Pretium nulla bibendum at metus. Id habitasse nec, dapibus id vulputate tristique ut. Nunc urna et mi elit ac. Dapibus amet, egestas tristique eget phasellus et sapien, vehicula amet. Eu aliquet sit lorem urna pellentesque odio. Aliquam blandit etiam nam urna molestie proin.</p>
-                    <p>Mi imperdiet gravida malesuada egestas eget et. Odio est orci volutpat aenean in. Volutpat, odio scelerisque at amet. Lectus libero semper phasellus dolor sed volutpat odio neque, integer. Turpis morbi urna at nullam. Vitae arcu pharetra vestibulum velit pellentesque vitae at id nisl. Odio egestas venenatis, enim cursus diam ipsum.</p>
+                        <?php the_field('faq_3'); ?>
                     </div>
                 </div>
                 </div>
             </div>
             </div>
             <div class="faq__img">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/fag_img.png'); ?>">
+            <img src="<?php the_field("faq_image"); ?>">
             </div>
         </div>
         </div>
