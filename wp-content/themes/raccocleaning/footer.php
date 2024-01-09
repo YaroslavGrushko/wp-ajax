@@ -337,7 +337,7 @@
             <div class="popup__ico">
             </div>
             <div class="popup__title">
-              <p><?php the_field("booked_label"); ?></p>
+              <p><?php the_field("booked_label"); ?> 👌</p>
             </div>
             <div class="popup__text">
               <p><?php the_field("order_accepted_label"); ?></p>

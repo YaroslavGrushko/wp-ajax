@@ -82,17 +82,17 @@ Square: " . $square . "\n
 Bedrooms: " . $bedrooms . "\n
 Bathrooms: " . $bathrooms . "\n";
     
-                    // add application to admin panel
+                    // add Order to admin panel
                     wp_insert_post(
                         array(
                             'post_title'  => $name,
                             'post_content'  => $content,
-                            'post_type'   => 'yvg_application',
+                            'post_type'   => 'yvg_order',
                             'post_status' => 'publish', /* Or "draft", if required */
                         )       
                     );
     
-                    // send application to admin email
+                    // send Order to admin email
                     $this->yvg_mail_to_admin($content);
     
                     // create new user (customer type)
@@ -110,7 +110,7 @@ Bathrooms: " . $bathrooms . "\n";
         $admin_mail = get_option('admin_email');
         $to = $admin_mail;
         $from = __( 'From ', 'yvgraccocleaning' ) . $admin_mail;
-        $subject = __( 'Cleaning Application', 'yvgraccocleaning' );
+        $subject = __( 'Cleaning Order', 'yvgraccocleaning' );
     
         $headers = array(
             'Content-Type: text/html; charset=UTF-8',
