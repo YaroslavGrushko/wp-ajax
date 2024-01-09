@@ -419,7 +419,6 @@ function submitForm(form) {
       type: "POST",
       data: data,
       success: function (response) {
-        console.log("Successfully submited!", response);
         onSuccess();
       },
     });
@@ -445,7 +444,7 @@ function submitForm(form) {
         renderer: "svg",
         loop: false,
         autoplay: true,
-        path: "/static/app/img/ico-plane.json", // the path to the animation json
+        path: "/wp-content/themes/raccocleaning/assets/images/ico-plane.json", // the path to the animation json
       });
     });
     $.fancybox.open({

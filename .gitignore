@@ -21,6 +21,7 @@
 /wp-content/themes/*
 /wp-content/backups-dup-lite/
 !wp-content/themes/raccocleaning
+!wp-content/plugins/yvgracco
 .vscode/launch.json
 .env
 about.docx
